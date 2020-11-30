@@ -6,7 +6,7 @@
 
 import re
 
-# TODO Regex to detect DD/MM/YYYY
+# Regex to detect DD/MM/YYYY
 dateRegex = re.compile(r'([0-3][0-9])/([0-1][0-9])/([1-2][0-9]{3})')
 mo = dateRegex.search('29/11/2020')
 
@@ -17,7 +17,7 @@ day = mo.group(1)
 month = mo.group(2)
 year = mo.group(3)
 leap = year
-#Checking for leap year:
+# Checking for leap year:
 if int(year) % 4 == 0:
     if int(year) % 100 == 0:
         if int(year) % 400 == 0:
